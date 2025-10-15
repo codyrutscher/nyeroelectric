@@ -69,7 +69,7 @@ export default function ContactForm() {
           Thank You!
         </h3>
         <p className="text-gray-600">
-          We've received your message and will get back to you shortly.
+          We&apos;ve received your message and will get back to you shortly.
         </p>
       </motion.div>
     );

@@ -49,11 +49,11 @@ export default function ContactPage() {
               viewport={{ once: true }}
             >
               <h2 className="text-4xl font-bold text-gray-900 mb-6">
-                Let's Talk About Your Project
+                Let&apos;s Talk About Your Project
               </h2>
               <p className="text-gray-600 text-lg mb-8 leading-relaxed">
                 Whether you need emergency repairs, routine maintenance, or a
-                complete electrical installation, we're here to help. Contact us
+                complete electrical installation, we&apos;re here to help. Contact us
                 today for a free consultation and quote.
               </p>
 
@@ -112,7 +112,7 @@ export default function ContactPage() {
                       {siteConfig.contact.email}
                     </p>
                     <p className="text-gray-600 text-sm mt-1">
-                      We'll respond within 24 hours
+                      We&apos;ll respond within 24 hours
                     </p>
                   </div>
                 </motion.a>

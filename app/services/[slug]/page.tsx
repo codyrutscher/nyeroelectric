@@ -163,7 +163,7 @@ export default function ServiceDetailPage() {
                 Request a Quote
               </h2>
               <p className="text-gray-600 mb-6">
-                Fill out the form below and we'll get back to you shortly
+                Fill out the form below and we&apos;ll get back to you shortly
               </p>
               <ContactForm />
             </motion.div>

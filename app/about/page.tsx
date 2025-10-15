@@ -64,13 +64,13 @@ export default function AboutPage() {
                 </p>
                 <p>
                   Our commitment to quality, safety, and customer satisfaction has
-                  remained unwavering throughout our journey. We've completed
+                  remained unwavering throughout our journey. We&apos;ve completed
                   thousands of projects, from simple residential repairs to complex
                   commercial installations, always maintaining the highest
                   standards of workmanship.
                 </p>
                 <p>
-                  Today, we're proud to serve both residential and commercial
+                  Today, we&apos;re proud to serve both residential and commercial
                   clients with a team of highly skilled, licensed electricians who
                   are passionate about their craft and dedicated to exceeding
                   customer expectations.

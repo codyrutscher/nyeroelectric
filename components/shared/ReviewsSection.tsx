@@ -110,7 +110,7 @@ export default function ReviewsSection() {
             What Our Customers Say
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
-            Don't just take our word for it - hear from our satisfied customers
+            Don&apos;t just take our word for it - hear from our satisfied customers
           </p>
 
           {/* Stats */}

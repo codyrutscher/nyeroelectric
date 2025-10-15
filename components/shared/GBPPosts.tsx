@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { FaGoogle, FaCalendar, FaClock, FaExternalLinkAlt } from "react-icons/fa";
+import { FaGoogle, FaCalendar, FaExternalLinkAlt } from "react-icons/fa";
 import { siteConfig } from "@/config/site.config";
 
 interface GBPPost {
