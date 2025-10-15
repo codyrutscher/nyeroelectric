@@ -42,7 +42,7 @@ export default function ServiceDetailPage() {
     );
   }
 
-  const icons: Record<string, JSX.Element> = {
+  const icons: Record<string, React.ReactElement> = {
     home: <FaHome className="text-6xl" />,
     building: <FaBuilding className="text-6xl" />,
     emergency: <FaClock className="text-6xl" />,

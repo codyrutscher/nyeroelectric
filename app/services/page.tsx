@@ -16,7 +16,7 @@ import { siteConfig } from "@/config/site.config";
 import AnimatedIcon from "@/components/shared/AnimatedIcon";
 
 export default function ServicesPage() {
-  const icons: Record<string, JSX.Element> = {
+  const icons: Record<string, React.ReactElement> = {
     home: <FaHome className="text-6xl" />,
     building: <FaBuilding className="text-6xl" />,
     emergency: <FaClock className="text-6xl" />,
