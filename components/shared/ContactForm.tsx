@@ -38,23 +38,38 @@ export default function ContactForm() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission - in production, send to your backend/email service
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-
-    setIsSubmitting(false);
-    setIsSuccess(true);
-
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setIsSuccess(false);
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        service: "",
-        message: "",
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       });
-    }, 3000);
+
+      if (response.ok) {
+        setIsSuccess(true);
+        
+        // Reset form after 3 seconds
+        setTimeout(() => {
+          setIsSuccess(false);
+          setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            service: "",
+            message: "",
+          });
+        }, 3000);
+      } else {
+        alert("There was an error submitting your form. Please try again or call us directly at (412) 819-8772.");
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+      alert("There was an error submitting your form. Please try again or call us directly at (412) 819-8772.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (isSuccess) {
@@ -136,7 +151,7 @@ export default function ContactForm() {
             onChange={handleChange}
             required
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all"
-            placeholder="(555) 123-4567"
+            placeholder="(412) 819-8772"
           />
         </div>
 
@@ -157,11 +172,15 @@ export default function ContactForm() {
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all bg-white"
           >
             <option value="">Select a service</option>
+            <option value="electrical-contractor">Electrical Contractor</option>
+            <option value="electrical-services">Electrical Services</option>
+            <option value="electrical-wiring">Electrical Wiring</option>
+            <option value="outlet-installation">Electric Outlet Installation</option>
+            <option value="fixture-installation">Electrical Fixture Installation</option>
+            <option value="panel-installation">Electrical Panel Installation/Upgrades</option>
+            <option value="electrical-repairs">Electrical Repairs</option>
             <option value="residential">Residential Electrical</option>
             <option value="commercial">Commercial Electrical</option>
-            <option value="emergency">Emergency Services</option>
-            <option value="ev-charging">EV Charging Installation</option>
-            <option value="generator">Generator Installation</option>
             <option value="other">Other</option>
           </select>
         </div>

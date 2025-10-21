@@ -5,10 +5,10 @@ export const siteConfig = {
 
   // Contact Information
   contact: {
-    phone: "(555) 123-4567",
-    email: "info@nyeroelectric.com",
-    address: "123 Electric Ave, City, State 12345",
-    hours: "Mon-Fri: 7AM-6PM, Sat: 8AM-4PM",
+    phone: "(412) 819-8772",
+    email: "nyeroelectric@gmail.com",
+    address: "Eighty Four, PA",
+    hours: "Mon-Sat: 8AM-4PM, Sun: Closed",
   },
 
   // Social Media
@@ -21,7 +21,7 @@ export const siteConfig = {
 
   // WhatsApp for chatbot
   whatsapp: {
-    number: "5551234567", // Phone number in international format without + or spaces
+    number: "14128198772", // Phone number in international format without + or spaces
     defaultMessage: "Hi! I'd like to learn more about your electrical services.",
   },
 
